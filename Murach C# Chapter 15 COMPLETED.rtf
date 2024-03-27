@@ -1,0 +1,357 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fswiss\fprq2\fcharset0 Calibri;}{\f2\fmodern\fprq1\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mnaryLim0\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw75\brdrcf1 \nowidctlpar\hyphpar0\li-630\cf1\b\f0\fs28 Chapter 15: How to work with interfaces and generics\par
+Murach's C#\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\fs36\par
+
+\pard\nowidctlpar\hyphpar0\li-630\b\fs22 MULTIPLE CHOICE\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 1.\tab Which of the following statements about interfaces is \i not\i0  true?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell With C# 8.0 and later, an interface can provide default implementations for some or all of its members.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell An interface can inherit other interfaces.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell A class can only implement a single interface.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell A class that implements an interface must provide an implementation for every non-default member of the interface.\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 2.\tab Which of the following is a difference between interfaces and abstract classes?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell An abstract class can use instance variables, but an interface can\rquote t.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell An abstract class can declare static members, but an interface can\rquote t.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell An abstract class can implement some of its members, but an interface can\rquote t.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell An abstract class can be inherited by multiple classes, but an interface can\rquote t.\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 3.\tab Which of the following declares a class named Student that inherits a class named Person and implements the ICloneable interface?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell\f2\fs18 public class Student : Person, ICloneable\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell\b\f2\fs18 public class Student : ICloneable, Person\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell\b\f2\fs18 public class Student : Person : ICloneable\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell\b\f2\fs18 public class Student : ICloneable : Person\b0\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 4.\tab Which of the following declares a class named Book that implements the ICloneable and IDisplayable interfaces?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell\b\f2\fs18 public class Book : ICloneable + IDisplayable\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell\b\f2\fs18 public class Book : ICloneable += IDisplayable\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b c.\cell\f2\fs18 public class Book : ICloneable, IDisplayable\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 d.\cell\b\f2\fs18 public class Book : ICloneable : IDisplayable\b0\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 5.\tab Which of the following can be used to declare a get accessor in an interface?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell\b\f2\fs18 get \{ return value \};\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell\b\f2\fs18 get return value;\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell\b\f2\fs18 get => value;\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell\f2\fs18 get;\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+\par
+\par
+\par
+\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 6.\tab Given an interface named IWriteable, what type of object can be passed to the Save() method with the following declaration?\par
+
+\pard\keep\hyphpar0\widctlpar\sa120\b\f2\fs18 public bool Save(IWriteable obj)\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\b0\f0\fs22 a.\cell any object\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell any object that implements the IWriteable interface\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell any object that has a Save() method\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell only objects created from the IWriteable class\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 7.\tab With C# 8.0 and later, what \i can\rquote t\i0  you add to an interface?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell regular (non-abstract) methods\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell static fields\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell static methods\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell instance variables\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 8.\tab When you code a class that implements an interface that has default methods,\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell you don\rquote t need to implement its default methods\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell you can\rquote t use the default methods defined in the interface in your class\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell you can\rquote t override its default methods\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell you must override its default methods\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 9.\tab Which of the following statements instantiates a collection of integers from a generic class named Books and assigns it to a variable named newBooks?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell\b\f2\fs18 Books newBooks = new Books(int);\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell\b\f2\fs18 Books<int> newBooks = new Books(int);\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell\b\f2\fs18 Books newBooks = new Books<int>();\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell\f2\fs18 Books<int> newBooks = new Books<int>();\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\sa120\b\page Code example 15-1\par
+
+\pard\keep\hyphpar0\widctlpar\f2\fs18 public interface IPrintable\par
+\{\par
+    void Print();\par
+\}\par
+\par
+public class Printer\par
+\{\par
+    public static void Print(IPrintable p)\par
+    \{\par
+        MessageBox.Show("Print");\par
+        p.Print();\par
+    \}\par
+\}\par
+\par
+public class Order : IPrintable\par
+\{\par
+    public void Print()\par
+    \{\par
+        MessageBox.Show("Order");\par
+    \}\par
+\}\par
+public class Transaction\par
+\{\par
+\}\par
+public class Rental : Transaction, IPrintable\par
+\{\par
+    public void Print()\par
+    \{\par
+        MessageBox.Show("Rental");\par
+    \}\par
+\}\b0\f0\fs2\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\fs22\tab 10.\tab (Refer to code example 15-1.) Which of the following statements will definitely \i not\i0  compile?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell\b\f2\fs18 IPrintable p = new Order();\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell\b\f2\fs18 Rental\b0\f0\fs22  \b\f2\fs18 rental = new Rental();\b0\f0\fs22\par
+\b\f2\fs18 IPrintable p = rental;\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b c.\cell\f2\fs18 IPrintable p = new IPrintable();\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 d.\cell\b\f2\fs18 Transaction t = new Rental();\b0\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 11.\tab (Refer to code example 15-1.) What happens when the code that follows is executed?\b\par
+
+\pard\keep\hyphpar0\widctlpar\f2\fs18 Rental r = new Rental();\par
+
+\pard\keep\hyphpar0\widctlpar\sa120 Printer.Print(r);\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\b0\f0\fs22 a.\cell\ldblquote Print\rdblquote  is displayed in a message box.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell\ldblquote Rental\rdblquote  is displayed in a message box.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b c.\cell\ldblquote Print\rdblquote  is displayed in a message box and then \ldblquote Rental\rdblquote  is displayed in a second message box.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 d.\cell A runtime error occurs because the Print method() can\rquote t accept Rental objects.\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 12.\tab (Refer to code example 15-1.) What happens when the code that follows is executed?\b\par
+
+\pard\keep\hyphpar0\widctlpar\f2\fs18 Order order = new Order();\par
+
+\pard\keep\hyphpar0\widctlpar\sa120 order.Print();\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\b0\f0\fs22 a.\cell\ldblquote Print\rdblquote  is displayed in a message box.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell\ldblquote Order\rdblquote  is displayed in a message box.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell\ldblquote Print\rdblquote  is displayed in a message box and \ldblquote Order\rdblquote  is displayed in a second message box.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell A runtime error occurs because the Print() method isn\rquote t available from an Order object.\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\fs22\tab 13.\tab A method that accepts an interface as an argument can accept any object that\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell implements that interface\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell defines the same methods as the interface\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell implements the interface or defines the same methods as the interface\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell is created from that interface\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 14.\tab The ICloneable interface defines a Clone() method that\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell returns the Object type\cell\row\trowd\trgaph45\trleft-45\trrh264\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell accepts the Object type as a parameter\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell returns a specific type \cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell accepts a specific type as a parameter\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\cf1\b0\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 15.\tab The IComparable<T> interface defines a CompareTo() method that\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell returns the Object type\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell accepts the Object type as a parameter\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell returns a specific type\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell accepts a specific type as a parameter\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 16.\tab The main reason for creating a class that implements the IEnumerable<T>  interface is so the class can\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell include a Count property that indicates how many elements are in the collection\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell be used to instantiate more than one object at the same time\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell also implement the ICloneable interface\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell be used with a foreach statement\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 17.\tab If you implement the ICloneable interface for an Invoice class that has a property that represents a Customer object, \par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell you must make sure that the clone refers to a different Customer object\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell you must make sure that the clone refers to the same Customer object\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell you must convert the Customer object to its composite value types\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell you can decide whether the clone refers to the same or a different Customer object\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 18.\tab Which of the following declares a generic interface named IRetainable? \par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell\b\f2\fs18 generic interface IRetainable\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell\f2\fs18 interface IRetainable<T>\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell\b\f2\fs18 interface IRetainable: T\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell\b\f2\fs18 interface T IRetainable\b0\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 19.\tab Which of the following declares a public class named Book that implements a generic interface named IRetainable that works with the Book type?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell\f2\fs18 public class Book : IRetainable<Book>\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell\b\f2\fs18 public class Book : IRetainable<T>\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell\b\f2\fs18 public class Book : IRetainable(Book)\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell\b\f2\fs18 interface IRetainable<Book> : Book\b0\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508\par
+}
+ 

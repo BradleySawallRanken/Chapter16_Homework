@@ -1,0 +1,383 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fswiss\fprq2\fcharset0 Calibri;}{\f2\fmodern\fprq1\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mnaryLim0\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw75\brdrcf1 \nowidctlpar\hyphpar0\li-630\cf1\b\f0\fs28 Chapter 16: How to organize, document, and test your classes\par
+Murach's C#\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\fs36\par
+
+\pard\nowidctlpar\hyphpar0\li-630\b\fs22 MULTIPLE CHOICE\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 1.\tab When might you want to code two or more classes in a single file?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell When the classes are large\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell When the classes are closely related and small\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell When the project contains many classes that are unrelated\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell When the project contains only a few class files\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 2.\tab When might you want to use nested classes?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell When one class is unrelated to another class\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell When one class needs to be split up into multiple files\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell When one class needs to inherit another class\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell When one class only makes sense within the context of another class\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\cf1\b0\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 3.\tab How would you refer to the nested class in the following example from another class?\par
+
+\pard\keep\hyphpar0\widctlpar\b\f2\fs18 public class Customer\par
+\{\par
+    public class Address\par
+    \{\par
+    \}\par
+
+\pard\keep\hyphpar0\widctlpar\sa120\}\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx4185\cellx4545\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\b0\f0\fs22 a.\cell\b\f2\fs18 Address\b0\f0\fs22\cell\cf2\b c.\cell\f2\fs18 Customer.Address\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx4185\cellx4545\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell\b\f2\fs18 CustomerAddress\b0\f0\fs22\cell d.\cell\b\f2\fs18 Customer_Address\b0\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 4.\tab To nest a namespace, you can\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell code one namespace statement within a method\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell code one namespace followed by the nest keyword and the nested namespace\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell code the fully qualified name for the nested namespace in the namespace statement\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell code the name for the namespace in the nested statement\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 5.\tab File scoped namespaces, introduced in C# 10.0, eliminate the need for \par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell the namespace keyword\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell nested namespaces\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell braces and indentation\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell semicolons\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 6.\tab Which of the following is \i not\i0  a rule for file scoped namespaces?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell Only one file per project can declare a file scoped namespace\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell Each file can declare only one file scoped namespace\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell Only using directives can precede the declaration of a file scoped namespace in a file\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell A file cannot declare both a file scoped namespace and block scoped namespaces\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\tab 7.\tab Which of the following is an example of a file scoped namespace?\par
+\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell\b\f2\fs18 namespace Murach\par
+\{\par
+    public class Validator \{...\}\par
+\}\par
+\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell\b\f2\fs18 namespace Murach;\par
+public class Validator \{...\}\par
+\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell\b\f2\fs18 namespace Murach\par
+\{\par
+    namespace Validation \par
+    \{\par
+        public class Validator \{...\}\par
+    \}\par
+\}\par
+\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell\f2\fs18 namespace Murach.Validation \par
+\{\par
+    public class Validator \{...\}\par
+\}\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 8.\tab What does Visual Studio use to separate the code that\rquote s generated for a Form class from the code that\rquote s entered by the programmer?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell partial classes\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell nested classes\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell a single file that contains multiple classes\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell nested namespaces\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\tab 9.\tab Given the following code, which of the following is a using directive for the Invoice class and any other classes in the same namespace as the Invoice class?\par
+
+\pard\keep\hyphpar0\widctlpar\par
+\b\f2\fs18 namespace Payables.Business;\par
+public class Invoice \{...\}\par
+\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\b0\f0\fs22 a.\cell\b\f2\fs18 using Payables;\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell\f2\fs18 using Payables.Business;\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell\b\f2\fs18 using Payables nest Business;\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell\b\f2\fs18 using Payables.Business.Invoice;\b0\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 10.\tab Once you add a reference to a class library, you can simplify access to a class in that library by coding\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell a new namespace for the class library\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell a using directive that identifies the class\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell a using directive that identifies the library\rquote s namespace\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell the XML documentation for the class\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+\par
+\par
+\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 11.\tab To use the XML documentation feature to create documentation for the classes and members that you create, you can code\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell two slashes followed by the XML tags that describe the class or member that follows\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell three slashes followed by the XML tags that describe the class or member that follows\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell two slashes followed by the description of the class or member that follows\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell three slashes followed by the description of the class or member that follows\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 12.\tab Which of the following is \i not \i0 a benefit of using class libraries?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell They simplify maintenance\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell The size of projects that use them is reduced\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell Their code is reusable\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b d.\cell They make it easier for other classes to refer to the classes in the libraries\cell\row 
+\pard\nowidctlpar\hyphpar0\cf1\b0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 13.\tab What type of file is created when you build a project that contains a class library?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx4185\cellx4545\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell an EXE file\cell c.\cell an HTML file\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx4185\cellx4545\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell a DLL file\cell\cf1\b0 d.\cell an XML file\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 14.\tab Before you can use a class library in an application, you must\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell fully qualify each class in the library with its namespace\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell code a using directive that identifies the class library\rquote s namespace\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b c.\cell add a reference to the class library\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 d.\cell create a new namespace for the application\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 15.\tab Partial classes can be used to \par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell split the code for a class across two or more namespaces\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell split the code for a class across two or more files\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell hold the code for a class that hasn\rquote t been finished\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell hold the code for a class until the other classes in that assembly are finished\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 16.\tab Which of the following is \i not\i0  an advantage of unit testing?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell It helps you find problems earlier in the development cycle\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell It reduces the amount of code that you need to write to test a class\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell It doesn\rquote t require you to run the application and retest it each time you change the code\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell It makes debugging easier because when a test fails, you only need to debug the most recent code changes.\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 17.\tab Where do you code unit tests? \par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell In the same project that contains the classes to be tested\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell In a class that\rquote s nested within the classes to be tested\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell In a project that\rquote s part of a solution that doesn\rquote t contain any other projects\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell In a project that\rquote s part of a solution that also contains the classes to be tested\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sb120\sa120\tab 18.\tab The AAA pattern stands for \par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b a.\cell Arrange, Act, Assert\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 b.\cell Arrange, Apply, Attest\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar c.\cell Array, Act, Answer\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell Aim, Adjust, Again\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sa120\tab 19.\tab Given a variable named expected and a variable named result, the following code tests whether the result object is equal to the expected object and...\par
+
+\pard\keep\hyphpar0\widctlpar\sa120\b\f2\fs18 Assert.AreEqual(expected, result);\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\b0\f0\fs22 a.\cell throws an exception if the two objects are equal.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b b.\cell throws an exception if the two objects are not equal.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 c.\cell returns a true value if the two objects are equal.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar d.\cell returns a false value if the two objects are not equal.\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sa120\tab 20.\tab Which of the following is a valid declaration for a method that contains a unit test?\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar a.\cell\b\f2\fs18 public void IsDecimal_ValidValue() \{\}\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell\b\f2\fs18 [TestClass]\par
+public void IsDecimal_ValidValue() \{\}\b0\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b c.\cell\f2\fs18 [TestMethod]\par
+public void IsDecimal_ValidValue() \{\}\f0\fs22\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 d.\cell\b\f2\fs18 [AAA]\par
+public void IsDecimal_ValidValue() \{\}\b0\f0\fs22\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\fs22\par
+
+\pard\keep\hyphpar0\widctlpar\fi-630\sa120\tab 21.\tab If coded within a method for a unit test, what does the following code do?\par
+
+\pard\keep\hyphpar0\widctlpar\b\f2\fs18     string name = "Test field";\par
+    var result = Validator.IsDecimal("three", name);\par
+
+\pard\keep\hyphpar0\widctlpar\sa120     Assert.IsTrue(result.Contains(name));\par
+\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\b0\f0\fs22 a.\cell 
+\pard\intbl\keep\hyphpar0\widctlpar\ri1440 It tests whether the result that\rquote s returned by the IsDecimal() method is a true value.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar b.\cell It tests whether the IsDecimal() method of the Validator class can convert strings to decimal values.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf2\b c.\cell It tests whether the result that\rquote s returned by the IsDecimal() method contains the name that\rquote s passed to the IsDecimal() method.\cell\row\trowd\trgaph45\trleft-45\trpaddl45\trpaddr45\trpaddfl3\trpaddfr3
+\cellx315\cellx8415 
+\pard\intbl\keep\hyphpar0\widctlpar\cf1\b0 d.\cell It tests whether the result that\rquote s returned by the IsDecimal() method contains a string value of \ldblquote three\rdblquote .\cell\row 
+\pard\nowidctlpar\hyphpar0\fs2\par
+
+\pard\nowidctlpar\hyphpar0\sa1\fs12\par
+
+\pard\nowidctlpar\hyphpar0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508\fs22\par
+}
+ 

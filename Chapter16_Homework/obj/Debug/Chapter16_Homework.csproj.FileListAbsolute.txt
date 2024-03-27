@@ -1,0 +1,10 @@
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\bin\Debug\Chapter16_Homework.exe.config
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\bin\Debug\Chapter16_Homework.exe
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\bin\Debug\Chapter16_Homework.pdb
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\obj\Debug\Chapter16_Homework.csproj.AssemblyReference.cache
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\obj\Debug\Chapter16_Homework.frmDelivery.resources
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\obj\Debug\Chapter16_Homework.Properties.Resources.resources
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\obj\Debug\Chapter16_Homework.csproj.GenerateResource.cache
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\obj\Debug\Chapter16_Homework.csproj.CoreCompileInputs.cache
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\obj\Debug\Chapter16_Homework.exe
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\Chapter16_Homework\obj\Debug\Chapter16_Homework.pdb

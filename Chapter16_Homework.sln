@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter16_Homework", "Chapter16_Homework\Chapter16_Homework.csproj", "{9151571D-3F5B-4C37-A450-09A8D18097FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLogin", "BankLogin\BankLogin.csproj", "{61B582AE-5E60-4097-B11D-E55E023E8D66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9151571D-3F5B-4C37-A450-09A8D18097FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9151571D-3F5B-4C37-A450-09A8D18097FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9151571D-3F5B-4C37-A450-09A8D18097FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9151571D-3F5B-4C37-A450-09A8D18097FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B582AE-5E60-4097-B11D-E55E023E8D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B582AE-5E60-4097-B11D-E55E023E8D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B582AE-5E60-4097-B11D-E55E023E8D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B582AE-5E60-4097-B11D-E55E023E8D66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD643A30-2089-4F79-88CE-E3FC10E2261C}
+	EndGlobalSection
+EndGlobal

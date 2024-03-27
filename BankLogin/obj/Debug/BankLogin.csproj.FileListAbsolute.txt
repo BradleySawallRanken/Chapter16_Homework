@@ -1,0 +1,10 @@
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\bin\Debug\BankLogin.exe.config
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\bin\Debug\BankLogin.exe
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\bin\Debug\BankLogin.pdb
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\obj\Debug\BankLogin.csproj.AssemblyReference.cache
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\obj\Debug\BankLogin.frmBank.resources
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\obj\Debug\BankLogin.Properties.Resources.resources
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\obj\Debug\BankLogin.csproj.GenerateResource.cache
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\obj\Debug\BankLogin.csproj.CoreCompileInputs.cache
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\obj\Debug\BankLogin.exe
+C:\Users\sawal\Desktop\The Ranken File\Locked In Homework Time\Chapter16_Homework\BankLogin\obj\Debug\BankLogin.pdb
